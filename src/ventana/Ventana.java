@@ -3,6 +3,7 @@ package ventana;
 
 import java.awt.Color;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
@@ -17,8 +18,12 @@ public class Ventana extends JFrame {
     
     private void iniciarComponentes(){
        JPanel panel = new JPanel();
-       panel.setBackground(Color.green);
+      //panel.setBackground(Color.green);
        this.getContentPane().add(panel);
+       
+       JLabel etiqueta = new JLabel();
+       etiqueta.setText("Prueba");
+       panel.add(etiqueta);
     }
     
 }
